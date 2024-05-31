@@ -7,9 +7,11 @@ typedef enum {
 
 typedef struct {
     Command command;
-    char pname[8];
+    // char pname[8];
 
-    // record: stored in params[1]
-    int32_t params[2];
+    // record: stored in params[0]
+    // update coords: playerid, px, py
+    uint32_t chip_id;
+    int32_t params[4];
 
 } BLECommandPacket;
