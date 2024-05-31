@@ -1,0 +1,41 @@
+BLE SERVER
+- Peripherals
+    - SD card to save data
+    - Screen to display game frames
+    - Button
+- Operation
+    - Button
+        - Press button to start recording game
+        - Press again to stop
+    - Updates display
+    - Receive data from the BLE client
+        - Protocol TBC
+
+BLE CLIENT
+- Peripherals
+    - joystick
+    - Serial from computer to set name
+
+- Operation
+    - Read inputs from arduinos from TWI
+    - TWI Protocol?
+
+
+ARDUINO
+
+
+
+BLE Protocol
+C->S
+- CommandType
+    - 0: coordinates
+    - 1: playername update
+    - 2: record
+- Data
+    - 0: coordinate data
+        - playernum, px, py
+    - 1: 4 char player name
+    - 2: record command
+        - 1: start
+        - 0: stop
+ 
